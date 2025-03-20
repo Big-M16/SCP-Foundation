@@ -1,0 +1,72 @@
+body {
+    padding: 2%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(84, 84, 84);
+    color: rgb(255, 255, 255);
+    margin: 2%; 
+    margin-bottom: 10%;
+}
+
+header {
+    background-color: rgb(252, 39, 39);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4%;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(32, 1, 1, 0.5), rgba(82, 68, 68, 0.5));
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+h1, h2, h3, h4 {
+    text-decoration: underline;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:focus {
+    outline: 2px solid rgb(62, 62, 62);
+}
+
+footer {
+    background-color: rgb(37, 37, 37);
+    font-size: .9em;
+    position: fixed;
+    border-radius: 10px;
+    left: 0; 
+    bottom: 0;
+    width: 100%;
+    margin-top: 15%;
+    background-image: linear-gradient(rgba(32, 1, 1, 0.5), rgba(82, 68, 68, 0.5));
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+@media only screen and (max-width: 794px) {
+    nav ul {
+        display: grid;
+        flex-direction: column;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px auto;
+    }
+}
